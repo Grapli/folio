@@ -1,0 +1,58 @@
+@use 'base/colors' as *;
+@use 'utils/mixins' as *;
+// HEADER
+@media (max-height: 350px) {
+	.header {
+		&__btn {
+			display: none;
+		}
+	}
+}
+@media (min-width: 576px) {
+	.header {
+		&__title {
+			font-size: 5rem;
+		}
+		&__text {
+			font-size: 2rem;
+		}
+		&__btn {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		background-image: $banner-gradient, url('/dist/img/header-big.jpg');
+		&__title {
+			font-size: 5rem;
+		}
+		&__text {
+			font-size: 3rem;
+		}
+		&__btn {
+			font-size: 2.2rem;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.header {
+		&__title {
+			font-size: 6.6rem;
+		}
+		&__btn {
+			margin-top: 1em;
+			font-size: 2.5rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+		&__title{
+			font-size: 8rem;
+		}
+	
+	}
+}

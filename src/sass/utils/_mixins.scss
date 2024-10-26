@@ -1,0 +1,7 @@
+@use 'base/colors' as *;
+@mixin heroImages($bgImg) {
+	background-image: $banner-gradient, url($bgImg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}

@@ -1,0 +1,50 @@
+@use 'base/colors' as *;
+@use 'utils/mixins' as *;
+
+// HEADER
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2em;
+	height: 100vh;
+	text-align: center;
+	color: $white;
+	@include heroImages('/dist/img/header-mini.jpg');
+
+	&__title,
+	&__text,
+	&__btn {
+		background: linear-gradient(60deg, $white, $accent-color);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		color: transparent;
+	}
+
+	&__title {
+		font-size: 3.5rem;
+		font-weight: 500;
+	}
+	&__text {
+		display: inline-block;
+		margin-top: 0.5em;
+		font-size: 1.8rem;
+		font-weight: 300;
+	}
+	&__btn {
+		margin-top: 0.6em;
+		padding: 0.8em 1.6em;
+		font-size: 1.6rem;
+		border: 1px solid $accent-color;
+		text-align: center;
+		text-transform: uppercase;
+		border-radius: 8px;
+		cursor: pointer;
+		&::before {
+			background-color: $hover-button;
+		}
+	}
+}

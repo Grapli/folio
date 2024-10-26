@@ -1,0 +1,96 @@
+@use 'base/colors' as *;
+
+.nav {
+	&__desktop {
+		position: fixed;
+		top: 5%;
+		width: 100%;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		z-index: 3000;
+		&__menu {
+			&__item {
+				margin: 0 1.5em;
+				font-size: 2rem;
+				color: $accent-color;
+				text-decoration: none;
+			}
+		}
+	}
+	&__mobile {
+		&__menu {
+			position: fixed;
+			top: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 100vh;
+			width: 100%;
+			transform: translateX(100%);
+			background-color: $bg-color;
+			z-index: 100;
+			&--active {
+				transform: translateX(0);
+			}
+
+			&__item {
+				position: relative;
+				display: block;
+				margin: 1em 0;
+				font-size: 2.8rem;
+				text-decoration: none;
+				color: $accent-color;
+			}
+		}
+
+		&__hamburger {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			padding: 1em;
+			background: none;
+			transform: translateX(0);
+			border: 1px solid transparent;
+			cursor: pointer;
+			z-index: 5000;
+			&:focus {
+				outline: none;
+				border: 1px solid $accent-color;
+			}
+			&__box {
+				position: relative;
+				width: 40px;
+				height: 30px;
+			}
+			&__bars,
+			&__bars::after,
+			&__bars::before {
+				content: '';
+				position: absolute;
+				right: 0;
+				height: 3px;
+				width: 100%;
+				background-color: $accent-color;
+			}
+			&__bars::after {
+				top: 13px;
+			}
+			&__bars::before {
+				top: 27px;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.nav {
+		&__mobile {
+			display: none;
+		}
+		&__desktop {
+			display: flex;
+		}
+	}
+}
