@@ -1,4 +1,5 @@
 @use 'base/colors' as *;
+@use 'utils/mixins' as *;
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
@@ -8,11 +9,22 @@
 .section-heading {
 	position: relative;
 	margin-bottom: 2rem;
+	font-weight: 300;
 	font-size: 3rem;
 	text-align: center;
 	text-transform: uppercase;
-	color: $black;
+	@include textBg;
 	letter-spacing: 2px;
+}
+.section-text {
+	position: relative;
+	margin-bottom: 2em;
+	font-size: 1.8rem;
+	text-align: center;
+	color: $accent-color;
+}
+.section-subtext {
+	@include textBg;
 }
 
 .section-padding {
@@ -27,6 +39,12 @@
 	.section-padding {
 		padding: 6rem 2rem;
 	}
+	.section-text {
+		font-size: 2.5rem;
+	}
+	.section-subtext {
+		font-size: 2.2rem;
+	}
 }
 
 @media (min-width: 992px) {
@@ -36,15 +54,19 @@
 	.section-padding {
 		padding: 8rem 2rem;
 	}
+	.section-text {
+		font-size: 3rem;
+	}
+	.section-subtext {
+		font-size: 2.8rem;
+	}
 }
 
 .word {
 	opacity: 0;
 	display: inline-block;
-	
 	transition: opacity 0.5s ease;
 }
 .visible {
 	opacity: 1;
 }
-

@@ -3,5 +3,13 @@
 	background-image: $banner-gradient, url($bgImg);
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
+	background-attachment: scroll;
+}
+
+@mixin textBg {
+	background: linear-gradient(60deg, $white, $accent-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
 }

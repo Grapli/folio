@@ -10,8 +10,9 @@
     <script src="https://kit.fontawesome.com/dc3100ff67.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 
@@ -24,7 +25,7 @@
         </div>
     </button>
 
-    <div class="nav__mobile__menu ">   
+    <div class="nav__mobile__menu ">
         <a class="nav__mobile__menu__item" href="#about">O mnie</a>
         <a class="nav__mobile__menu__item" href="#realization">Realizacje</a>
         <a class="nav__mobile__menu__item" href="#faq">FAQ</a>
@@ -33,11 +34,14 @@
 </nav>
 
 <nav class="nav nav__desktop">
-    <div class="nav__desktop__menu">   
-        <a class="nav__desktop__menu__item" href="#about">O mnie</a>
-        <a class="nav__desktop__menu__item" href="#realization">Realizacje</a>
-        <a class="nav__desktop__menu__item" href="#faq">FAQ</a>
-        <a class="nav__desktop__menu__item" href="#contact">Kontakt</a>
+    <div class="wrapper">
+
+        <div class="nav__desktop__menu">
+            <a class="nav__desktop__menu__item" href="#about">O mnie</a>
+            <a class="nav__desktop__menu__item" href="#realization">Realizacje</a>
+            <a class="nav__desktop__menu__item" href="#faq">FAQ</a>
+            <a class="nav__desktop__menu__item" href="#contact">Kontakt</a>
+        </div>
     </div>
 </nav>
     <header class="header section">
@@ -51,61 +55,74 @@
             <span class="word">do</span>
             <span class="word">Twojej</span>
             <span class="word">marki.</span>
-           
         </p>
         <a class="header__btn btn-special-animation" href="#realization">Poznaj ofertę</a>
     </header>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <main class="main">
+        <section class="benefits section section-padding" id="realization">
+            <div class="wrapper">
+                <h2 class="section-heading">Strona internetowa</h2>
+                <p class="section-text">Dlaczego jest taka ważna? Jakie niesie ze sobą korzyści?</p>
+                <p class="section-subtext">
+                    Strona internetowa to dziś fundament każdej firmy. Przemyślana i estetyczna witryna
+                    przyciąga klientów i daje firmie przewagę nad konkurencją. To centrum informacji, które pozwala
+                    klientom poznać ofertę i buduje ich zaufanie do marki.</p>
 
+                <div class="benefits__cards">
+                    <div class="benefits__card" onclick="void(0)">
+                        <h3 class="benefits__card__title  ">Zasięgi i widoczność</h3>
+                        <p class="benefits__card__icon"><i class="fa-solid fa-eye"></i></p>
+                        <p class="benefits__card__text">Strona internetowa to klucz do dotarcia do większego grona
+                            klientów. To Twoja wizytówka online, dostępna 24/7, dzięki czemu możesz zawsze być w zasięgu
+                            swoich potencjalnych odbiorców.</p>
+                    </div>
+
+                    <div class="benefits__card" onclick="void(0)">
+                        <h3 class="benefits__card__title">Profesjonalizm</h3>
+                        <p class="benefits__card__icon"><i class="fa-solid fa-star"></i></p>
+                        <p class="benefits__card__text">Profesjonalna strona internetowa nie tylko buduje zaufanie, ale
+                            również potwierdza rzetelność Twojej firmy. W obecnych czasach, obecność w sieci stała się
+                            koniecznością dla każdej poważnej marki.</p>
+                    </div>
+
+                    <div class="benefits__card" onclick="void(0)">
+                        <h3 class="benefits__card__title">Kontakt z klientami</h3>
+                        <p class="benefits__card__icon"><i class="fa-solid fa-comments"></i></p>
+                        <p class="benefits__card__text">Strona internetowa sprawia, że komunikacja z klientami jest
+                            prostsza dzięki formularzom kontaktowym, czatom na żywo i integracjom z mediami
+                            społecznościowymi. To efektywny sposób na interakcję i budowanie relacji.</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="about section-padding section" id="about">
+            <div class="wrapper">
+                <h2 class="section-heading">O mnie</h2>
+
+                <div class="about__box">
+                    <div class="about__box-img">
+                        <img class="about__box__small" src="/dist/img/about-mini.jpg"
+                            alt="Programista pracujący po nocy">
+                        <img class="about__box__big" src="/dist/img/about-big.jpg" alt="Programista pracujący po nocy">
+                        <div class="about__box-shadow"></div>
+                    </div>
+                    <div class="about__box__text">
+                        <p class="about__box__text-text">Od 2015 roku jestem związany z branżą e-commerce, a od 2023
+                            roku zajmuję się także tworzeniem stron internetowych. Projektowanie stron i aplikacji to
+                            moja pasja – każdy projekt przynosi nowe wyzwania i inspirujące doświadczenia, które
+                            pomagają mi stale rozwijać swoje umiejętności. Pracuję rzetelnie i zawsze dotrzymuję
+                            terminów, nawet jeśli czasem wymaga to dodatkowego wysiłku.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
 
     <script src="./dist/js/main.min.js"></script>
 </body>

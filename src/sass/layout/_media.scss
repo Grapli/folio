@@ -50,9 +50,77 @@
 
 @media (min-width: 1200px) {
 	.header {
-		&__title{
+		&__title {
 			font-size: 8rem;
 		}
-	
+	}
+}
+//Section benefits
+@media (min-width: 768px) {
+	.benefits {
+		&__cards {
+			flex-direction: row;
+			gap: 1em;
+		}
+		&__card {
+			height: 450px;
+			margin: 1em 0;
+
+			&__icon {
+				font-size: 4rem;
+			}
+		}
+	}
+}
+
+
+
+// Section about
+@media (min-width: 576px) {
+	.about {
+		&__box {
+			margin: 0;
+			flex-direction: row;
+			justify-content: space-between;
+			&-img {
+				width: 40%;
+			}
+			&__small {
+				display: none;
+			}
+			&__big {
+				display: block;
+				width: 100%;
+				max-height: 600px;
+			}
+			&__text {
+				width: 50%;
+				&-text {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.about {
+		&__box {
+			&__text {
+				&-text {
+					font-size: 2.2rem;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.about {
+		&__box {
+			&__text {
+				&-text {
+					font-size: 2.8rem;
+				}
+			}
+		}
 	}
 }
