@@ -49,34 +49,32 @@
 .benefits {
 	&__cards {
 		display: flex;
-		justify-content: center;
-		align-items: center;
 		flex-direction: column;
-		margin: 0.5em 0;
+		margin-top: 2em;
+		height: 100%;
+		gap: 1em;
 	}
 	&__card {
 		display: flex;
-		justify-content: center;
+		// justify-content: center;
 		align-items: center;
+		text-align: center;
 		flex-direction: column;
-		margin: 1em 0;
-		padding: 1em;
+		padding: 0.8em;
 		border: 1px solid $accent-color;
 		transition: box-shadow 0.5s;
+		width: 100%;
 
 		&__title,
 		&__icon,
 		&__text {
-			display: flex;
+			margin-top: 0.5em;
 			@include textBg;
-			text-align: center;
-		}
-	
-		&__icon {
-			font-size: 3rem;
-			margin: 0.5em 0;
 		}
 
+		&__icon {
+			font-size: 4rem;
+		}
 
 		&:hover {
 			box-shadow: 0 0 5px 5px $accent-color;
@@ -95,14 +93,13 @@
 		}
 		&__small {
 			width: 100%;
-			max-height: 600px;
 		}
 		&__big {
 			display: none;
 		}
 		&-shadow {
 			position: absolute;
-			bottom: 0;
+			top: 0;
 			width: 100%;
 			height: 100%;
 			background: linear-gradient(45deg, rgba(190, 10, 214, 0.35), rgba(68, 0, 255, 0.45));
