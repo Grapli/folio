@@ -25,6 +25,7 @@
 }
 .section-subtext {
 	@include textBg;
+	text-align: center;
 }
 
 .section-padding {
@@ -58,7 +59,7 @@
 		font-size: 3rem;
 	}
 	.section-subtext {
-		font-size: 2.8rem;
+		font-size: 2.6rem;
 	}
 }
 
