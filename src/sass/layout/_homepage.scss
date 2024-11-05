@@ -125,4 +125,73 @@
 
 // Section realization
 .realization {
+	&__box {
+		display: grid;
+		// background-color: #fff;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3 1fr);
+		gap: 1em;
+	}
+	&__card {
+		position: relative;
+		display: grid;
+		border: 1px solid $accent-color;
+		text-align: center;
+
+		&__title {
+			margin: 0.5em;
+			@include textBg;
+		}
+		&__text {
+			margin: 0.5em;
+			@include textBg;
+		}
+	}
+	&__tools {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		margin: 0.5em 0;
+		padding: 0.5em;
+		cursor: pointer;
+
+		&__contact {
+			i {
+				font-size: 2.5rem;
+				padding: 1em;
+				@include textBg;
+			}
+		}
+
+		&__info {
+			position: relative;
+
+			i {
+				font-size: 2.5rem;
+				padding: 1em;
+				@include textBg;
+			}
+		}
+
+		&__box {
+			display: none;
+			position: absolute;
+			bottom: 50%;
+			background: $hover-gradient;
+			color: $accent-color;
+			text-align: center;
+			&-title {
+				margin: 0.5em;
+			}
+			&-text {
+				margin: 0.5em;
+			}
+			&-bold {
+				font-weight: bold;
+			}
+		}
+	}
+}
+.realization__tools__info-icon:hover .realization__tools__box {
+	display: block;
 }

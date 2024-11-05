@@ -78,6 +78,19 @@
 		}
 	}
 }
+@media (min-width: 1200px) {
+	.benefits {
+		&__card {
+			&__title {
+				font-size: 2.8rem;
+				height: 6rem;
+			}
+			&__text {
+				font-size: 2rem;
+			}
+		}
+	}
+}
 
 // Section about
 @media (min-width: 768px) {
@@ -147,4 +160,9 @@
 			}
 		}
 	}
+}
+
+//Section realization
+@media (min-width: 992px) {
+
 }
