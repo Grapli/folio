@@ -164,5 +164,40 @@
 
 //Section realization
 @media (min-width: 992px) {
+	.realization {
+		&__box {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			gap: 1em;
+		}
+		&__card {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(3, 1fr);
 
+			&__title {
+				font-size: 2.5rem;
+			}
+			&__text {
+				font-size: 1.8rem;
+			}
+		}
+		&__tools {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.realization {
+		&__card {
+			&__title {
+				font-size: 2.5rem;
+			}
+			&__text {
+				font-size: 2rem;
+			}
+		}
+	}
 }

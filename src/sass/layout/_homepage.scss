@@ -129,7 +129,7 @@
 		display: grid;
 		// background-color: #fff;
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(3 1fr);
+		grid-template-rows: repeat(3, 1fr);
 		gap: 1em;
 	}
 	&__card {
@@ -137,13 +137,17 @@
 		display: grid;
 		border: 1px solid $accent-color;
 		text-align: center;
+		transition: box-shadow 0.3s;
+		&:hover {
+			box-shadow: 0 0 5px 5px $accent-color;
+		}
 
 		&__title {
-			margin: 0.5em;
+			margin: 1em;
 			@include textBg;
 		}
 		&__text {
-			margin: 0.5em;
+			margin: 0.5em 1.5em;
 			@include textBg;
 		}
 	}
@@ -153,10 +157,10 @@
 		flex-direction: column;
 		margin: 0.5em 0;
 		padding: 0.5em;
-		cursor: pointer;
 
 		&__contact {
 			i {
+				cursor: pointer;
 				font-size: 2.5rem;
 				padding: 1em;
 				@include textBg;
@@ -167,6 +171,7 @@
 			position: relative;
 
 			i {
+				cursor: pointer;
 				font-size: 2.5rem;
 				padding: 1em;
 				@include textBg;
@@ -176,10 +181,13 @@
 		&__box {
 			display: none;
 			position: absolute;
-			bottom: 50%;
+			bottom: 75%;
+			// top: 75%;
 			background: $hover-gradient;
 			color: $accent-color;
 			text-align: center;
+			width: 100%;
+			z-index: 10000;
 			&-title {
 				margin: 0.5em;
 			}
@@ -192,6 +200,6 @@
 		}
 	}
 }
-.realization__tools__info-icon:hover .realization__tools__box {
+.fa-info:hover ~ .realization__tools__box {
 	display: block;
 }
