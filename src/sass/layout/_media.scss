@@ -160,16 +160,7 @@
 }
 
 //Section realization
-@media (min-width: 576px) {
-	.realization {
-		&__tools {
-			&__box {			
-				top: auto;
-				bottom: 75%;			
-			}
-		}
-	}
-}
+
 @media (min-width: 992px) {
 	.realization {
 		&__box {
@@ -188,11 +179,25 @@
 			}
 			&__text {
 				font-size: 1.8rem;
+				// margin-bottom: 1em;
+			}
+
+			&--one {
+				grid-column: 1/2;
+				grid-row: 1/2;
+			}
+			&--two {
+				grid-column: 2/3;
+				grid-row: 1/2;
+			}
+			&--three {
+				grid-column: 3/4;
+				grid-row: 1/2;
 			}
 		}
-		&__tools {
-			margin: 0;
-			padding: 0;
+		&__tools{
+			font-size: 4.5rem;
+
 		}
 	}
 }
@@ -200,11 +205,15 @@
 	.realization {
 		&__card {
 			&__title {
-				font-size: 2.5rem;
+				font-size: 2.8rem;
 			}
 			&__text {
 				font-size: 2rem;
+				margin-bottom: 1em;
 			}
+		}
+		&__tools {
+			font-size: 5.5rem;					
 		}
 	}
 }

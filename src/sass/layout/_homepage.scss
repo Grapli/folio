@@ -81,7 +81,7 @@
 		display: grid;
 		grid-template-columns: auto;
 		grid-template-rows: repeat(2, auto);
-		margin-top: 3em;
+
 		&__img {
 			position: relative;
 			grid-column: 1/2;
@@ -119,13 +119,11 @@
 .realization {
 	&__box {
 		display: grid;
-		// background-color: #fff;
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(3, 1fr);
 		gap: 1em;
 	}
 	&__card {
-		position: relative;
 		display: grid;
 		border: 1px solid $accent-color;
 		text-align: center;
@@ -141,52 +139,27 @@
 			margin: 0.5em 1.5em;
 			@include textBg;
 		}
+
+		&--one {
+			grid-column: 1/2;
+			grid-row: 1/2;
+		}
+		&--two {
+			grid-column: 1/2;
+			grid-row: 2/3;
+		}
+		&-three {
+			grid-column: 1/2;
+			grid-row: 3/4;
+		}
 	}
 	&__tools {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		margin: 0.5em 0;
-		padding: 0.5em;
-		&__contact {
-			i {
-				cursor: pointer;
-				font-size: 2.5rem;
-				padding: 1em;
-				@include textBg;
-			}
-		}
-		&__info {
-			position: relative;
-			i {
-				cursor: pointer;
-				font-size: 2.5rem;
-				padding: 1em;
-				@include textBg;
-			}
-		}
-		&__box {
-			display: none;
-			position: absolute;
-			// bottom: 75%;
-			top: 75%;
-			background: $hover-gradient;
-			color: $accent-color;
-			text-align: center;
-			width: 100%;
-			z-index: 10000;
-			&-title {
-				margin: 0.5em;
-			}
-			&-text {
-				margin: 0.5em;
-			}
-			&-bold {
-				font-weight: bold;
-			}
+		font-size: 3.5rem;
+		@include textBg;
+
+		i {
+			cursor: pointer;
+			padding: 0.5em;
 		}
 	}
-}
-.fa-info:hover ~ .realization__tools__box {
-	display: block;
 }
