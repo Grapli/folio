@@ -71,12 +71,12 @@
 	display: inline-block;
 	transition: opacity 0.5s ease;
 }
-.bold {
-	font-weight: bold;
-}
 .visible {
 	opacity: 1;
 }
 .active {
 	display: block;
+}
+.bold {
+	font-weight: bold;
 }

@@ -59,6 +59,7 @@
 		flex-direction: column;
 		padding: 0.8em;
 		border: 1px solid $accent-color;
+		border-radius: 8px;
 		transition: box-shadow 0.5s;
 		width: 100%;
 		&__title,
@@ -131,6 +132,12 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 0.5fr 1fr 100px;
 		border: 1px solid $accent-color;
+		border-radius: 8px;
+		transition: box-shadow 0.5s;
+
+		&:hover {
+			box-shadow: 0 0 5px 5px $accent-color;
+		}
 
 		&__info {
 			grid-column: 1/2;
@@ -178,6 +185,41 @@
 					@include textBg;
 				}
 			}
+		}
+	}
+}
+//Section faq
+.faq {
+	&__box {
+		
+		background-color: transparent;
+		border-radius: 8px;
+	}
+	&__card {
+		margin: 0.5em 0.6em;
+		margin-top: 1em;
+		@include textBg;
+
+		&__btn {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			border: none;
+			cursor: pointer;
+			padding: 0.5em 0;
+			border-top: 1px solid $accent-color;
+			
+			&-text {
+				font-size: 1.8rem;			
+			}
+
+			i {
+				margin-right: 10px;
+			}
+		}
+
+		&__info {
+			display: none;
 		}
 	}
 }

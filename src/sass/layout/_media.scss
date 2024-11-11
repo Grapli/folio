@@ -211,3 +211,48 @@
 		}
 	}
 }
+//Section faq
+@media (min-width: 768px) {
+	.faq {
+		&__card {
+			&__btn {
+				i {
+					margin-right: 25px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.faq {
+		&__card {
+			&__btn {
+				&-text {
+					font-size: 2rem;
+				}
+			}
+			&__info {
+				&-text {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.faq {
+		&__card {
+			&__btn {
+				&-text {
+					font-size: 2.2rem;
+				}
+			}
+			&__info {
+				&-text {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+}
