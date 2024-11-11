@@ -152,7 +152,7 @@
 				grid-column: 1/2;
 				grid-row: 1/2;
 				&-text {
-					font-size: 2.8rem;
+					font-size: 2.4rem;
 				}
 			}
 		}
@@ -167,53 +167,47 @@
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: 1fr;
-			gap: 1em;
 		}
 		&__card {
 			display: grid;
 			grid-template-columns: 1fr;
-			grid-template-rows: repeat(3, 1fr);
-
-			&__title {
-				font-size: 2.5rem;
-			}
-			&__text {
+			grid-template-rows: 240px 1fr 150px;
+			&__info {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: 100px 1fr;
 				font-size: 1.8rem;
-				// margin-bottom: 1em;
+				&-title {
+					grid-column: 1/2;
+					grid-row: 1/2;
+				}
+				&-text {
+					grid-column: 1/2;
+					grid-row: 2/3;
+				}
 			}
-
-			&--one {
-				grid-column: 1/2;
-				grid-row: 1/2;
+			&__tools {
+				i {
+					font-size: 6rem;
+				}
 			}
-			&--two {
-				grid-column: 2/3;
-				grid-row: 1/2;
-			}
-			&--three {
-				grid-column: 3/4;
-				grid-row: 1/2;
-			}
-		}
-		&__tools{
-			font-size: 4.5rem;
-
 		}
 	}
 }
 @media (min-width: 1200px) {
 	.realization {
 		&__card {
-			&__title {
-				font-size: 2.8rem;
+			&__info {
+				&-title {
+					font-size: 2.8rem;
+				}
+				&-text {
+					font-size: 2rem;
+				}
 			}
-			&__text {
-				font-size: 2rem;
-				margin-bottom: 1em;
+			&__more {
+				font-size: 1.8rem;
 			}
-		}
-		&__tools {
-			font-size: 5.5rem;					
 		}
 	}
 }

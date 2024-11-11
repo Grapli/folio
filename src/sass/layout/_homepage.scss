@@ -55,7 +55,7 @@
 	&__card {
 		display: flex;
 		align-items: center;
-		text-align: center;
+		text-align: left;
 		flex-direction: column;
 		padding: 0.8em;
 		border: 1px solid $accent-color;
@@ -66,6 +66,9 @@
 		&__text {
 			margin-top: 0.5em;
 			@include textBg;
+		}
+		&__title {
+			text-align: center;
 		}
 		&__icon {
 			font-size: 4rem;
@@ -125,41 +128,56 @@
 	}
 	&__card {
 		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.5fr 1fr 100px;
 		border: 1px solid $accent-color;
-		text-align: center;
-		transition: box-shadow 0.3s;
-		&:hover {
-			box-shadow: 0 0 5px 5px $accent-color;
-		}
-		&__title {
-			margin: 1em;
-			@include textBg;
-		}
-		&__text {
-			margin: 0.5em 1.5em;
-			@include textBg;
-		}
 
-		&--one {
+		&__info {
 			grid-column: 1/2;
 			grid-row: 1/2;
+
+			&-title {
+				text-align: center;
+				margin: 0.6em;
+				color: $accent-color;
+				@include textBg;
+			}
+			&-text {
+				text-align: left;
+				margin: 0.5em 0.6em;
+				color: $accent-color;
+				@include textBg;
+			}
 		}
-		&--two {
-			grid-column: 1/2;
-			grid-row: 2/3;
-		}
-		&-three {
+		&__tools {
 			grid-column: 1/2;
 			grid-row: 3/4;
-		}
-	}
-	&__tools {
-		font-size: 3.5rem;
-		@include textBg;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@include textBg;
 
-		i {
-			cursor: pointer;
-			padding: 0.5em;
+			i {
+				font-size: 4rem;
+				cursor: pointer;
+			}
+		}
+		&__more {
+			grid-column: 1/2;
+			grid-row: 2/3;
+			margin-top: 1em;
+
+			&__list {
+				list-style: none;
+				text-align: left;
+
+				&-item {
+					margin: 0.5em 0.6em;
+				}
+				&-text {
+					@include textBg;
+				}
+			}
 		}
 	}
 }
