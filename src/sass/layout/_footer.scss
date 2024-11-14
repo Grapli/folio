@@ -1,0 +1,11 @@
+@use 'base/colors' as *;
+@use 'utils/mixins' as *;
+
+.footer {
+	border-top: 1px solid $accent-color;
+	&__bottom-text {
+		text-align: center;
+		margin-top: 0.5em;
+		color: $accent-color;
+	}
+}

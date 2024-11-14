@@ -1,8 +1,9 @@
 @use 'base/colors' as *;
 
 .nav {
+	position: relative;
 	&__desktop {
-		position: fixed;
+		position: absolute;
 		top: 5%;
 		width: 100%;
 		display: none;
@@ -10,7 +11,8 @@
 		align-items: center;
 		box-shadow: 0 0 10px $accent-color;
 		z-index: 3000;
-		background: $nav-gradient;
+		// padding-top: ;
+		background: transparent;
 		&__menu {
 			display: flex;
 			justify-content: space-around;

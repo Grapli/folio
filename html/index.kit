@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arkadiusz Piotrowicz - Profesjonalne strony internetowe</title>
+    <title>Arkadiusz Piotrowicz - Tworzenie stron i sklepów internetowych</title>
     <link rel="icon" href="./dist/img/favicon-new.png" type="image/png">
     <meta name="description" content="Zbuduj swój biznes w sieci, strony internetowe, sklepy, blogi" />
     <script src="https://kit.fontawesome.com/dc3100ff67.js" crossorigin="anonymous"></script>
@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 
@@ -145,7 +144,6 @@
                         </div>
 
                     </div>
-
                     <div class="realization__card realization__card--two">
                         <div class="realization__card__info">
                             <h2 class="realization__card__info-title">Sklepy internetowe</h2>
@@ -197,7 +195,6 @@
                             <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
                         </div>
                     </div>
-
                     <div class="realization__card realization__card--three">
                         <div class="realization__card__info">
                             <h2 class="realization__card__info-title">Blogi</h2>
@@ -249,13 +246,9 @@
                             <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
         </section>
-
         <section class="section faq section-padding" id="faq">
             <div class="wrapper">
                 <h2 class="section-heading">FAQ</h2>
@@ -373,18 +366,32 @@
         <section class="section contact section-padding" id="contact">
             <div class="wrapper">
                 <h2 class="section-heading">Kontakt</h2>
-
-
-
+                <div class="contact__box">
+                    <div class="contact__form">
+                        <form action="mail.php" method="post" class="contact-form">
+                            <div class="contact-box">
+                                <label for="name">Imię:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="contact-box">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="contact-box">
+                                <label for="msg">Wiadomość:</label>
+                                <textarea name="msg" id="msg" required></textarea>
+                            </div>
+                            <button>Wyślij</button>
+                        </form>
+                        <p class="msg-status"></p>
+                    </div>
+                </div>
             </div>
-
-
         </section>
-
-
-
-
     </main>
+    <button class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- @include 'footer.kit' -->
+
 
     <script src="./dist/js/main.min.js"></script>
 </body>
