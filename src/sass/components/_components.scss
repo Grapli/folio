@@ -12,7 +12,7 @@
 	font-size: 3rem;
 	text-align: center;
 	text-transform: uppercase;
-	color: $accent-color;
+	color: $text-color;
 	letter-spacing: 2px;
 }
 .section-text {
@@ -20,7 +20,7 @@
 	margin-bottom: 2em;
 	font-size: 2rem;
 	text-align: center;
-	color: $text-color;
+	color: $secondary-color;
 }
 .section-subtext {
 	color: $accent-color;
@@ -36,9 +36,9 @@
 	right: 0;
 	transform: translateX(-50%);
 	padding: 1.5em;
-	color: $white;
+	color: $text-color;
 	background: $accent-color;
-	border: 1px solid $accent-color;
+	border: 1px solid $text-color;
 	border-radius: 50%;
 	cursor: pointer;
 	font-size: 1.5rem;
