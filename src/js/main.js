@@ -7,7 +7,7 @@ const accordionBtns = document.querySelectorAll('.faq__card__btn')
 const footerYear = document.querySelector('.footer__year')
 const msgStatus = document.querySelector('.msg-status')
 const scrollToTop = document.querySelector('.scroll-to-top')
-let root = document.documentElement
+
 
 const handleNav = () => {
 	navMobile.classList.toggle('nav__mobile__menu--active')
@@ -82,5 +82,4 @@ delayLetters()
 accordionBtns.forEach(btn => btn.addEventListener('click', openAccordionItems))
 handleCurrentYear()
 scrollToTop.addEventListener('click', toTop)
-// showScrollToTop()
 window.addEventListener('scroll',showScrollToTop)

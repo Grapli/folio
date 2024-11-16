@@ -12,7 +12,7 @@
 	font-size: 3rem;
 	text-align: center;
 	text-transform: uppercase;
-	@include textBg;
+	color: $accent-color;
 	letter-spacing: 2px;
 }
 .section-text {
@@ -20,10 +20,10 @@
 	margin-bottom: 2em;
 	font-size: 2rem;
 	text-align: center;
-	color: $accent-color;
+	color: $text-color;
 }
 .section-subtext {
-	@include textBg;
+	color: $accent-color;
 	text-align: center;
 }
 .section-padding {
