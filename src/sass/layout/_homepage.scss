@@ -152,7 +152,7 @@
 				color: $text-color;
 			}
 			&-text {
-				text-align: left;
+				text-align: center;
 				margin: 0.5em 0.6em;
 				color: $accent-color;
 			}
@@ -227,7 +227,9 @@
 }
 
 //Section Contact
+
 .contact-form {
+	position: relative;
 	padding: 30px;
 	width: 100%;
 	background-color: transparent;
@@ -266,11 +268,14 @@
 	width: 100%;
 	cursor: pointer;
 	color: $accent-color;
+	text-transform: uppercase;
+	font-weight: bold;
 	transition: background-color 0.3s, color 0.3s;
 }
 
 .contact-form button:hover {
-	color: #fff;
+	color: $text-color;
+	// background-color: $hover-button;
 	background-color: $accent-color;
 }
 
@@ -288,7 +293,7 @@
 
 .success {
 	display: flex;
-	background-color: hsl(143, 83%, 55%);
+	background-color: $hover-button;
 }
 
 .error {
