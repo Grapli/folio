@@ -42,7 +42,6 @@ const handleCurrentYear = () => {
 	footerYear.innerText = year
 }
 console.log(document.location.search)
-
 if (document.location.search === '?mail_status=sent') {
 	msgStatus.classList.add('success')
 	msgStatus.textContent = 'Wiadomość wysłana!'
@@ -51,7 +50,6 @@ if (document.location.search === '?mail_status=sent') {
 		msgStatus.classList.remove('success')
 	}, 3000)
 }
-
 if (document.location.search === '?mail_status=error') {
 	msgStatus.classList.add('error')
 	msgStatus.textContent = 'Wystąpił błąd.'
@@ -60,7 +58,6 @@ if (document.location.search === '?mail_status=error') {
 		msgStatus.classList.remove('error')
 	}, 3000)
 }
-
 const showScrollToTop = () => {
 	const scroll = window.scrollY
 	if (scroll > 500) {
@@ -69,14 +66,12 @@ const showScrollToTop = () => {
 		scrollToTop.classList.remove('active')
 	}
 }
-
 const toTop = () => {
 	window.scroll({
 		top: 0,
 		behavior: 'smooth',
 	})
 }
-
 navBtn.addEventListener('click', handleNav)
 delayLetters()
 accordionBtns.forEach(btn => btn.addEventListener('click', openAccordionItems))

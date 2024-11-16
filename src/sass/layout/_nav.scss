@@ -43,7 +43,6 @@
 			&--active {
 				transform: translateX(0);
 			}
-
 			&__item {
 				position: relative;
 				display: block;
@@ -53,7 +52,6 @@
 				color: $text-color;
 			}
 		}
-
 		&__hamburger {
 			position: fixed;
 			top: 20px;
@@ -92,7 +90,6 @@
 		}
 	}
 }
-
 @media (min-width: 992px) {
 	.nav {
 		&__mobile {
