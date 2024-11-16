@@ -213,6 +213,7 @@
 		&__info {
 			display: none;
 			margin-top: 15px;
+			color: $accent-color;
 		}
 	}
 }
@@ -221,16 +222,15 @@
 	&__box {
 		display: flex;
 		justify-content: center;
-		align-items:flex-start;
+		align-items: flex-start;
 		flex-direction: column;
 		&__item {
 			margin: 0.5em 0;
 			text-decoration: none;
 			color: $accent-color;
 			font-size: 1.8rem;
-			i{
+			i {
 				margin-right: 15px;
-				
 			}
 		}
 	}
