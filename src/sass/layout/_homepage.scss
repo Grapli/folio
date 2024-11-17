@@ -81,6 +81,7 @@
 }
 // Section About
 .about {
+	background-color: $bg-second;
 	&__box {
 		display: grid;
 		grid-template-columns: auto;
@@ -187,6 +188,7 @@
 }
 //Section faq
 .faq {
+	background-color: $bg-second;
 	&__box {
 		background-color: transparent;
 		border-radius: 8px;
@@ -219,6 +221,11 @@
 }
 //Section Contact
 .contact {
+	&__boxes {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 0.5fr;
+	}
 	&__box {
 		display: flex;
 		justify-content: center;
@@ -234,4 +241,80 @@
 			}
 		}
 	}
+}
+.contact-form {
+	// padding: 30px;
+	width: 100%;
+	background-color: transparent;
+	border-radius: 24px;
+	color: $text-color;
+}
+
+.contact-box {
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0;
+	width: 100%;
+	color: $accent-color;
+}
+
+.contact-form label {
+	margin-bottom: 10px;
+	font-size: 22px;
+	width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+	padding: 15px;
+	font-size: 16px;
+	border: 1px solid $accent-color;
+	border-radius: 12px;
+	color: $accent-color;
+	width: 100%;
+}
+
+.contact-form textarea {
+	resize: vertical;
+	min-height: 150px;
+}
+
+.contact-form button {
+	padding: 12px;
+	width: 100%;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-form button:hover {
+	color: $text-color;
+	background-color: $hover-button;
+	border: 1px solid $text-color;
+}
+.contact-agree {
+	margin-top: 0.5em;
+	color: $text-color;
+}
+.msg-status {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50px;
+	padding: 30px;
+	width: 100%;
+	border-radius: 12px;
+	font-size: 24px;
+}
+
+.success {
+	display: flex;
+	background-color: hsl(143, 83%, 55%);
+}
+
+.error {
+	display: flex;
+	background-color: hsl(9, 100%, 64%);
 }
