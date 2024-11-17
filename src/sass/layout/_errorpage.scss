@@ -1,0 +1,33 @@
+@use 'base/colors' as *;
+@use 'utils/mixins' as *;
+.error {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+
+	&__title {
+		text-align: center;
+		color: $text-color;
+	}
+	&__btn {
+		text-decoration: none;
+        text-transform: uppercase;
+		color: $text-color;
+		margin-top: 2.5em;
+		padding: 0.5em 1em;
+		border: 1px solid $accent-color;
+	}
+}
+
+@media (min-width:992px){
+    .error{
+        &__title{
+            font-size: 6rem;
+        }
+        &__btn{
+            font-size: 2rem;
+        }
+    }
+}
