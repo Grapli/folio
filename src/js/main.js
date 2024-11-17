@@ -7,7 +7,9 @@ const accordionBtns = document.querySelectorAll('.faq__card__btn')
 const footerYear = document.querySelector('.footer__year')
 const msgStatus = document.querySelector('.msg-status')
 const scrollToTop = document.querySelector('.scroll-to-top')
-
+const cookieBanner = document.querySelector('.cookie-banner')
+const cookieYesBtn = document.querySelector('.accept-cookies')
+const cookieNoBtn = document.querySelector('.decline-cookies')
 
 const handleNav = () => {
 	navMobile.classList.toggle('nav__mobile__menu--active')
@@ -72,9 +74,42 @@ const toTop = () => {
 		behavior: 'smooth',
 	})
 }
+
+const acceptedCookies = () => {
+	if (localStorage.getItem('cookiesAccepted') === 'true') {
+		cookieBanner.style.display = 'none'
+	}
+}
+const enableCookies = () => {
+	var script = document.createElement('script')
+	script.async = true
+	script.src = 'https://www.googletagmanager.com/gtag/js?id=G-W2M872GM1P'
+	document.head.appendChild(script)
+
+	script.onload = function () {
+		window.dataLayer = window.dataLayer || []
+		function gtag() {
+			dataLayer.push(arguments)
+		}
+		gtag('js', new Date())
+		gtag('config', 'G-W2M872GM1P')
+	}
+}
+const disableCookies = () => {}
+
 navBtn.addEventListener('click', handleNav)
 delayLetters()
 accordionBtns.forEach(btn => btn.addEventListener('click', openAccordionItems))
 handleCurrentYear()
 scrollToTop.addEventListener('click', toTop)
-window.addEventListener('scroll',showScrollToTop)
+window.addEventListener('scroll', showScrollToTop)
+acceptedCookies()
+cookieYesBtn.addEventListener('click', function () {
+	localStorage.setItem('cookiesAccepted', 'true')
+	cookieBanner.style.display = 'none'
+	enableCookies()
+})
+cookieNoBtn.addEventListener('click', function () {
+	localStorage.setItem('cookiesAccepted', 'false')
+	cookieBanner.style.display = 'none'
+})

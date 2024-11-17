@@ -8,13 +8,7 @@
     <link rel="icon" href="./dist/img/favicon-new.png" type="image/png">
     <meta name="description"
         content="Profesjonalne tworzenie stron internetowych – nowoczesne, responsywne i zoptymalizowane pod SEO witryny, które przyciągną klientów i wyróżnią Twoją markę. " />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2M872GM1P"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-W2M872GM1P');
-    </script>
+
     <script src="https://kit.fontawesome.com/dc3100ff67.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -413,11 +407,16 @@
         </section>
     </main>
     <button class="scroll-to-top" aria-label="Wróć na górę strony"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="cookie-banner" id="cookie-banner">
+        <p class="cookie-text">Nasza strona używa plików cookies, aby zapewnić Ci najlepsze wrażenia. Klikając "Akceptuję", wyrażasz zgodę
+            na używanie cookies. Możesz je zmienić w ustawieniach przeglądarki.</p>
+        <button id="accept-cookies" class="accept-cookies">Akceptuję</button>
+        <button id="decline-cookies" class="decline-cookies">Odrzucam</button>
+
+    </div>
     <footer class="footer">
     <p class="footer__bottom-text">&copy; <span class="footer__year"></span> | Arkadiusz Piotrowicz</p>
 </footer>
-
-
     <script src="./dist/js/main.min.js"></script>
 </body>
 
