@@ -304,9 +304,13 @@
 			align-items: center;
 			&__item {
 				font-size: 2.2rem;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 
 				i {
 					font-size: 3.5rem;
+					margin-bottom: 0.2em;
 				}
 			}
 		}
@@ -316,9 +320,8 @@
 	.contact {
 		&__box {
 			&__item {
-
 				i {
-					font-size: 4.5rem;					
+					font-size: 4.5rem;
 				}
 			}
 		}
