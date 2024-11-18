@@ -23,7 +23,7 @@
 }
 @media (min-width: 768px) {
 	.header {
-		background-image: $banner-gradient, url('/dist/img/header-big2.jpg');
+		background-image: $banner-gradient, url('/dist/img/header-big.jpg');
 		&__title {
 			font-size: 5rem;
 		}
@@ -127,6 +127,7 @@
 				grid-row: 1/2;
 				&-text {
 					font-size: 1.8rem;
+					line-height: 40px;
 				}
 			}
 		}

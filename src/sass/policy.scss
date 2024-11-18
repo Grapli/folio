@@ -1,4 +1,24 @@
+@use 'base/base' as *;
 @use 'base/colors' as *;
+
+body {
+	margin: 1.5em 2em;
+	color: $text-color;
+}
+h1 {
+	text-align: center;
+	margin: 1em 0;
+}
+h2 {
+	margin: 1em 0;
+}
+a {
+	color: $text-color;
+	text-decoration: none;
+}
+i {
+	font-size: 4rem;
+}
 .cookie-banner {
 	position: fixed;
 	bottom: 0;
@@ -29,7 +49,7 @@
 	background: $text-color;
 	color: $accent-color;
 }
-.cookie-policy{
+.cookie-policy {
 	color: $text-color;
 }
 @media (min-width: 1200px) {

@@ -11,7 +11,7 @@
 	height: 100vh;
 	text-align: center;
 	color: $white;
-	@include heroImages('/dist/img/header-big2.jpg');
+	@include heroImages('/dist/img/header-mini.jpg');
 	&__title,
 	&__text,
 	&__btn {
@@ -297,6 +297,10 @@
 	margin-top: 0.5em;
 	color: $text-color;
 }
+.contact-more {
+	color: $secondary-color;
+	text-decoration: none;
+}
 .msg-status {
 	display: none;
 	justify-content: center;
@@ -312,9 +316,4 @@
 .success {
 	display: flex;
 	background-color: hsl(143, 83%, 55%);
-}
-
-.error {
-	display: flex;
-	background-color: hsl(9, 100%, 64%);
 }
