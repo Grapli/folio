@@ -1,18 +1,20 @@
 @use 'base/colors' as *;
+@use 'base/base' as *;
 .cookie-banner {
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background-color: $accent-color;
+	background-color: $cookie-color;
 	color: $text-color;
 	z-index: 4000;
-	padding: 0 0.5em;
+	padding: 1em 0.5em;
 }
 .cookie-text {
 	margin: 0.5em 0;
 	font-size: 1.9rem;
 }
+
 .accept-cookies,
 .decline-cookies {
 	background: transparent;
@@ -23,14 +25,19 @@
 	cursor: pointer;
 	font-size: 1.6rem;
 	transition: color 0.3s, background 0.3s;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	margin: 0 0.2em;
+	text-transform: uppercase;
+}
+.cookie-policy {
+	color: $text-color;
+	font-weight: bold;
 }
 .accept-cookies:hover,
 .decline-cookies:hover {
 	background: $text-color;
 	color: $accent-color;
-}
-.cookie-policy{
-	color: $text-color;
 }
 @media (min-width: 1200px) {
 	.cookie-text {
@@ -44,8 +51,5 @@
 @media (min-width: 1400px) {
 	.cookie-text {
 		font-size: 2.4rem;
-	}
-	.accept-cookies {
-		margin-right: 20px;
 	}
 }

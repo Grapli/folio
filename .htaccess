@@ -5,3 +5,5 @@ RewriteCond %{ENV:HTTPS} !on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteRule ^index\.html$ / [NC,R,L]
 ErrorDocument 404 /404.html
+SetEnvIf Remote_Addr "213.134.170.28" dontlog
+Header set X-Robots-Tag "noindex, nofollow" env=dontlog

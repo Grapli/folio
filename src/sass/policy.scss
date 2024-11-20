@@ -14,58 +14,8 @@ h2 {
 }
 a {
 	color: $text-color;
-	text-decoration: none;
 }
 i {
-	font-size: 4rem;
-}
-.cookie-banner {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background-color: $accent-color;
-	color: $text-color;
-	z-index: 4000;
-	padding: 0 0.5em;
-}
-.cookie-text {
-	margin: 0.5em 0;
-	font-size: 1.9rem;
-}
-.accept-cookies,
-.decline-cookies {
-	background: transparent;
-	border: 1px solid $text-color;
-	color: $text-color;
-	padding: 1em 0.5em;
-	margin-bottom: 1.5em;
-	cursor: pointer;
-	font-size: 1.6rem;
-	transition: color 0.3s, background 0.3s;
-}
-.accept-cookies:hover,
-.decline-cookies:hover {
-	background: $text-color;
+	font-size: 4.5rem;
 	color: $accent-color;
-}
-.cookie-policy {
-	color: $text-color;
-}
-@media (min-width: 1200px) {
-	.cookie-text {
-		font-size: 2.2rem;
-	}
-	.accept-cookies,
-	.decline-cookies {
-		font-size: 1.8rem;
-	}
-}
-@media (min-width: 1400px) {
-	.cookie-text {
-		font-size: 2.4rem;
-	}
-	.accept-cookies {
-		margin-right: 20px;
-	}
 }
